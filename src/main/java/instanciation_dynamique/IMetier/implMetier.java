@@ -1,8 +1,8 @@
-package instantiation_static.IMetier;
+package instanciation_dynamique.IMetier;
 
-import instantiation_static.DAO.IDAO;
+import instanciation_dynamique.DAO.IDAO;
 
-public class implMetier implements IMetier{
+public class implMetier implements IMetier {
     private IDAO dao; // Couplage faible via l'interface IDao
 
 
