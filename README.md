@@ -33,14 +33,23 @@ Ce repository contient un projet pratique sur l'injection de dépendances en uti
 
 ## 📂 Structure du Projet
 src/
+
 ├── main/
+
 │ ├── java/
+
 │ │ ├── instantiation_static/ 
+
 │ │ ├── instanciation_dynamique/ 
-│ │ ├── spring/ # Injection avec Spring
+
+│ │ ├── spring/ 
+
 │ │ │ ├── annotations/
+
 │ │ │ ├── XML/ 
+
 │ │ └── resources/ (config.xml)
+
 │ ├── resources/
 
 
@@ -50,7 +59,7 @@ src/
 
 ### 🖥️ **Instanciation Statique**
 
-
+```
 package instantiation_static.presentation;
 
 import instantiation_static.DAO.implDao;
@@ -67,10 +76,10 @@ public class MainStatique {
         System.out.println("Résultat du calcul : " + metier.calcul());
     }
 }
-
+```
  
 ### 🖥️ **Instanciation Dynamique**
-
+```
 
 package instanciation_dynamique.presentation;
 
@@ -99,10 +108,10 @@ public class MainDynamique {
         }
     }
 }
+```
 
-
- 🖥️ **Spring - Version Annotations**
- 
+### 🖥️ **Spring - Version Annotations**
+ ```
 package spring.annotations.presentation;
 
 import org.springframework.context.ApplicationContext;
@@ -117,8 +126,9 @@ public class Presentation {
     }
 }
 
-
+```
  ### 🖥️ ** Spring - Version XML**
+ ```
 package spring.xml.presentation;
 
 import org.springframework.context.ApplicationContext;
@@ -132,7 +142,7 @@ public class Presentation {
         System.out.println(metier.calcul());
     }
 }
-
+```
 ## 💡 Injection des Dépendances
 
 - **a. Par instanciation statique** : L'instance de `IDao` est créée directement dans la classe `MetierImpl`.
