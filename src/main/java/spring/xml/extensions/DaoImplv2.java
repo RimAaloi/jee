@@ -1,12 +1,11 @@
-package com.jee.spring.xml.extensions;
+package spring.xml.extensions;
 
+import spring.annotations.DAO.IDAO;
 
-import com.jee.spring.xml.dao.IDao;
-
-public class DaoImplv2 implements IDao {
+public class DaoImplv2 implements IDAO {
     @Override
     public double getData() {
-        System.out.println("Getting data from WS");
-        return 30;
+        System.out.println("Version 2");
+        return Math.random() * 30;
     }
 }

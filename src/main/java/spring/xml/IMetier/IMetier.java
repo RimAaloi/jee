@@ -1,4 +1,4 @@
-package com.jee.spring.annotations.metier;
+package spring.xml.IMetier;
 
 public interface IMetier {
     double calcul();

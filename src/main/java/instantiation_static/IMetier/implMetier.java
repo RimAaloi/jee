@@ -3,10 +3,11 @@ package instantiation_static.IMetier;
 import instantiation_static.DAO.IDAO;
 
 public class implMetier implements IMetier{
+
     private IDAO dao; // Couplage faible via l'interface IDao
 
 
-    public void setDao(IDAO dao) {
+    public void setDao( IDAO dao) {
         this.dao = dao;
     }
 
