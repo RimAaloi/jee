@@ -1,6 +1,6 @@
 package instanciation_dynamique.DAO;
 
-public class implDao implements IDAO {
+public class ImplDao implements IDAO {
 
     @Override
     public double getData() {

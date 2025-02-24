@@ -9,7 +9,7 @@ public class MainStatique {
         implDao dao = new implDao();
         implMetier metier = new implMetier();
 
-        // Injection de dépendance
+
         metier.setDao(dao);
 
 

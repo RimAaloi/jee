@@ -1,2 +1,2 @@
-instanciation_dynamique.DAO.implDao
-instanciation_dynamique.IMetier.implMetier
+instanciation_dynamique.DAO.ImplDao
+instanciation_dynamique.IMetier.ImplMetier
